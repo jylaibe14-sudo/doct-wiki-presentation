@@ -26,6 +26,13 @@
 - 功能：鍵盤及按鈕翻頁、19 頁來源跳轉、4 種合成波形切換、快慢相關性示意、互動問答。
 - 所有合成曲線都是教學示意，不是原始研究測試結果。
 
+## 延伸補充：7 篇 dOCT 教學講義
+
+- 講義總覽：https://jylaibe14-sudo.github.io/doct-wiki-presentation/handouts.html
+- 共 7 篇獨立講義，從 OCT 基礎、掃描時序、LIV／IV／MIV、OCDS、腫瘤球藥物反應，到 Trypan blue 驗證與 common-path／aLIV／Swiftness。
+- 每篇包含學習目標、逐節內容、練習題與原始研究 DOI；Markdown 原稿保留在 `handouts/`。
+- 講義係依已 ingest 的 6 篇研究整理，**不額外計入文獻 ingest 數**；原本 19 頁簡報不變。
+
 ## 4. Loop / Graph 設計
 
 ```text

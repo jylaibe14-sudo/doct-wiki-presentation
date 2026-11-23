@@ -9,6 +9,7 @@
 - `knowledge/slides.json`：19 張教學頁，逐張標記 Wiki 頁與來源 IDs
 - `wiki/`：`npm run ingest` 產生的知識庫 Markdown
 - `docs/`：可在 GitHub Pages 使用的靜態網頁
+- `handouts/Lxx.md`：研究來源可追溯的獨立講義原稿；網頁版在 `docs/handouts/`，入口 `docs/handouts.html`
 - `scripts/`：ingest、query、build、validate
 - `logs/` 和 `evidence/`：執行紀錄、失敗測試與截圖
 

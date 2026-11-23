@@ -24,11 +24,26 @@
 
 完整 DOI、摘要與使用限制在 `raw/`、`wiki/sources/` 與 `SOURCES.md`。本次 ingest 為**整理過的中英書目與中文摘要**，不是 PDF 全文匯入或自動向量化；使用者的四篇 PDF **不在公開 ZIP 內**，避免複製發佈原始研究全文。
 
+## 新增延伸講義（7 篇）
+
+GitHub Pages：[`docs/handouts.html`](docs/handouts.html)；可編輯的 Markdown 原稿在 [`handouts/`](handouts/) 中。
+
+- [L01｜OCT 與 dOCT：從結構影像到細胞動態](handouts/L01.md)（S01、S02）
+- [L02｜掃描與前處理：影格、時間間隔、配準與 mask](handouts/L02.md)（S01、S02、S03）
+- [L03｜LIV、IV 與 MIV：如何量測訊號波動幅度？](handouts/L03.md)（S01、S02、S03）
+- [L04｜OCDS 與 PSD：從時間相關性理解動態快慢](handouts/L04.md)（S01、S02、S05）
+- [L05｜dOCT 藥物反應案例：MCF-7 腫瘤球與 PTX／TAM／DOX](handouts/L05.md)（S02、S05）
+- [L06｜從動態訊號到存活率：Trypan blue 驗證與亮度校正](handouts/L06.md)（S03、S02）
+- [L07｜降低假動態與進階解讀：Common-path、aLIV、Swiftness](handouts/L07.md)（S04、S06、S01）
+
+每篇講義都有學習目標、章節詳解、閱讀限制、原始文獻 DOI 與自我檢查題；屬於原有 6 份文獻的**延伸教學整理**，不是額外新增的文獻 ingest 數量。原本 19 張簡報保持不變。
+
 ## 網頁入口
 
 - `docs/index.html`：網站首頁
 - `docs/wiki.html`：可搜尋的 Wiki，9 個概念與 6 篇來源摘要
 - `docs/slides.html`：19 頁教學 HTML 簡報；← → 翻頁；F 全螢幕；含可切換合成波形及互動小測驗
+- `docs/handouts.html`：7 篇延伸教學講義入口
 - `docs/workflow.html`：Loop／Graph、真實命令、故障注入及反思
 
 網站為純 HTML/CSS/JS，不使用外部 CDN，下載後可以離線瀏覽。

@@ -13,6 +13,15 @@
 - [Mask、漂移、噪聲與解讀風險](concepts/artifacts.md) — 先確認影像有效區和配準，再解釋波動的生物來源。
 - [Common-path D-FFOCT 與抗震動](concepts/ffoct.md) — 共光路干涉可在特定架構中降低外部震動帶來的假動態。
 
+## 延伸教學講義（7 篇，非新增 ingest 文獻）
+- [L01 OCT 與 dOCT：從結構影像到細胞動態](../handouts/L01.md)（S01、S02）
+- [L02 掃描與前處理：影格、時間間隔、配準與 mask](../handouts/L02.md)（S01、S02、S03）
+- [L03 LIV、IV 與 MIV：如何量測訊號波動幅度？](../handouts/L03.md)（S01、S02、S03）
+- [L04 OCDS 與 PSD：從時間相關性理解動態快慢](../handouts/L04.md)（S01、S02、S05）
+- [L05 dOCT 藥物反應案例：MCF-7 腫瘤球與 PTX／TAM／DOX](../handouts/L05.md)（S02、S05）
+- [L06 從動態訊號到存活率：Trypan blue 驗證與亮度校正](../handouts/L06.md)（S03、S02）
+- [L07 降低假動態與進階解讀：Common-path、aLIV、Swiftness](../handouts/L07.md)（S04、S06、S01）
+
 ## 6 份已 ingest 來源
 - [S01 Dynamic contrast optical coherence tomography (DyC-OCT) for label-free live cell imaging](sources/S01.md) — 2024
 - [S02 Label-free visualization and quantification of the drug-type-dependent response of tumor spheroids by dynamic optical coherence tomography](sources/S02.md) — 2024
