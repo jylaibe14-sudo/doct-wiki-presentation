@@ -1,0 +1,6 @@
+
+> test:claim
+> node scripts/check.mjs --inject-bad-claim
+
+FAIL | 6 sources | 9 Wiki pages | 19 slides | 51 slide-source links
+ - Slide s06 把 LIV 誤寫成存活率

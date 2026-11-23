@@ -1,0 +1,54 @@
+{
+  "query": "LIV OCDS 存活",
+  "results": [
+    {
+      "id": "liv",
+      "title": "LIV：Logarithmic Intensity Variance",
+      "score": 16,
+      "sources": [
+        "S01",
+        "S02",
+        "S05"
+      ]
+    },
+    {
+      "id": "ocds",
+      "title": "OCDS：OCT Correlation Decay Speed",
+      "score": 16,
+      "sources": [
+        "S01",
+        "S02",
+        "S05"
+      ]
+    },
+    {
+      "id": "aliv",
+      "title": "aLIV 與 Swiftness",
+      "score": 16,
+      "sources": [
+        "S06",
+        "S01"
+      ]
+    },
+    {
+      "id": "viability",
+      "title": "腫瘤球、細胞存活與生物驗證",
+      "score": 15,
+      "sources": [
+        "S02",
+        "S03",
+        "S05"
+      ]
+    },
+    {
+      "id": "drug",
+      "title": "藥物反應：PTX、TAM、DOX",
+      "score": 2,
+      "sources": [
+        "S02",
+        "S05"
+      ]
+    }
+  ],
+  "method": "keyword matching over maintained Wiki concept notes; not a vector database, LLM API, or automatic research validation"
+}

@@ -1,0 +1,288 @@
+{
+  "date": "2026-11-23",
+  "runtime": "Chromium (Playwright)",
+  "checks": [
+    {
+      "name": "desktop no overflow index",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "desktop no JS errors index",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "wiki title present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki searchable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "source notes open",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "source evidence location",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop no overflow wiki",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "desktop no JS errors wiki",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "19 slides present",
+      "passed": true,
+      "detail": "content count"
+    },
+    {
+      "name": "next button advances",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "keyboard next advances",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 01 citations",
+      "passed": true,
+      "detail": "2 vs 2"
+    },
+    {
+      "name": "slide 02 citations",
+      "passed": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "name": "slide 03 citations",
+      "passed": true,
+      "detail": "2 vs 2"
+    },
+    {
+      "name": "slide 04 citations",
+      "passed": true,
+      "detail": "2 vs 2"
+    },
+    {
+      "name": "slide 05 citations",
+      "passed": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "name": "slide 06 citations",
+      "passed": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "name": "slide 07 citations",
+      "passed": true,
+      "detail": "2 vs 2"
+    },
+    {
+      "name": "slide 08 citations",
+      "passed": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "name": "slide 09 citations",
+      "passed": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "name": "slide 10 citations",
+      "passed": true,
+      "detail": "1 vs 1"
+    },
+    {
+      "name": "slide 11 citations",
+      "passed": true,
+      "detail": "2 vs 2"
+    },
+    {
+      "name": "slide 12 citations",
+      "passed": true,
+      "detail": "1 vs 1"
+    },
+    {
+      "name": "slide 13 citations",
+      "passed": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "name": "slide 14 citations",
+      "passed": true,
+      "detail": "1 vs 1"
+    },
+    {
+      "name": "slide 15 citations",
+      "passed": true,
+      "detail": "1 vs 1"
+    },
+    {
+      "name": "slide 16 citations",
+      "passed": true,
+      "detail": "5 vs 5"
+    },
+    {
+      "name": "slide 17 citations",
+      "passed": true,
+      "detail": "6 vs 6"
+    },
+    {
+      "name": "slide 18 citations",
+      "passed": true,
+      "detail": "3 vs 3"
+    },
+    {
+      "name": "slide 19 citations",
+      "passed": true,
+      "detail": "5 vs 5"
+    },
+    {
+      "name": "interactive synthetic waveform visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "waveform mode switches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "drift warning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quiz correct feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quiz wrong feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop no overflow slides",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "desktop no JS errors slides",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "six graph nodes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop no overflow workflow",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "desktop no JS errors workflow",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "390px no horizontal overflow index",
+      "passed": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "390px no JS errors index",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "390px no horizontal overflow wiki",
+      "passed": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "390px no JS errors wiki",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "390px no horizontal overflow slides",
+      "passed": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "390px no JS errors slides",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "390px no horizontal overflow workflow",
+      "passed": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "390px no JS errors workflow",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "320px no horizontal overflow index",
+      "passed": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "320px no JS errors index",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "320px no horizontal overflow wiki",
+      "passed": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "320px no JS errors wiki",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "320px no horizontal overflow slides",
+      "passed": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "320px no JS errors slides",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "320px no horizontal overflow workflow",
+      "passed": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "320px no JS errors workflow",
+      "passed": true,
+      "detail": "[]"
+    }
+  ],
+  "passed": true,
+  "check_count": 56
+}

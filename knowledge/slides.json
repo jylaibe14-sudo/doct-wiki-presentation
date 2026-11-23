@@ -1,0 +1,450 @@
+[
+  {
+    "id": "s01",
+    "type": "cover",
+    "eyebrow": "dOCT WIKI LAB / 生醫光學教學",
+    "title": "看見細胞的「動態」",
+    "subtitle": "從 OCT 結構影像到 Dynamic Optical Coherence Tomography：如何讀取波動、辨識噪聲與評估細胞活動？",
+    "points": [
+      "19 頁互動簡報",
+      "6 份來源摘要",
+      "9 篇 Wiki 知識頁"
+    ],
+    "sources": [
+      "S01",
+      "S05"
+    ],
+    "wiki": "intro"
+  },
+  {
+    "id": "s02",
+    "type": "goals",
+    "eyebrow": "01 / 學習目標",
+    "title": "學完這份簡報，你會知道",
+    "subtitle": "以第一次接觸 OCT 的學習者為出發點。",
+    "points": [
+      "OCT 與 dOCT 有什麼差別？",
+      "如何從重複影格分析時間波動？",
+      "LIV、OCDS 和 aLIV／Swiftness 各自看什麼？",
+      "如何避免把雜訊誤判成細胞活動？"
+    ],
+    "sources": [
+      "S01",
+      "S05",
+      "S06"
+    ],
+    "wiki": "intro"
+  },
+  {
+    "id": "s03",
+    "type": "split",
+    "eyebrow": "02 / 先理解 OCT",
+    "title": "同一份影像，兩種問題",
+    "subtitle": "結構資訊與動態資訊互相補充。",
+    "leftTitle": "傳統 OCT：靜態結構",
+    "left": [
+      "散射強弱與組織邊界",
+      "深度解析的剖面／體積影像",
+      "不能直接判讀細胞內活動"
+    ],
+    "rightTitle": "dOCT：時間變化",
+    "right": [
+      "重複掃描同一位置",
+      "分析每個像素的強度變動",
+      "映射組織內活動相關對比"
+    ],
+    "sources": [
+      "S01",
+      "S05"
+    ],
+    "wiki": "intro"
+  },
+  {
+    "id": "s04",
+    "type": "pipeline",
+    "eyebrow": "03 / 資料從哪裡來",
+    "title": "同一位置，要量測很多次",
+    "subtitle": "從原始 OCT 影格到一張 dOCT 動態圖。",
+    "steps": [
+      "固定 B-scan 位置",
+      "取得 N 張 OCT",
+      "逐像素取時間序列",
+      "移動與雜訊檢查",
+      "計算 LIV／OCDS",
+      "輸出動態彩圖"
+    ],
+    "footnote": "2024 年 MCF-7 藥物研究的例子：每位置 32 張、間隔 204.8 ms。這不是所有 dOCT 的通用設定。",
+    "sources": [
+      "S01",
+      "S02"
+    ],
+    "wiki": "acquisition"
+  },
+  {
+    "id": "s05",
+    "type": "signal",
+    "eyebrow": "04 / 互動體驗",
+    "title": "同樣看起來在變，原因可能不同",
+    "subtitle": "點選訊號情境，比較時間序列、LIV 示意值與自相關行為。",
+    "points": [
+      "所有曲線均為教學合成訊號，不是論文量測資料。",
+      "切換「慢速動態」、「快速動態」、「近乎靜止」與「整體漂移」觀察差異。"
+    ],
+    "footnote": "此互動只是理解概念的可視化，不實作正式 OCDS 擬合，也不能估計真實生物存活率。",
+    "sources": [
+      "S01",
+      "S04",
+      "S05"
+    ],
+    "wiki": "acquisition"
+  },
+  {
+    "id": "s06",
+    "type": "metrics",
+    "eyebrow": "05 / 指標一：LIV",
+    "title": "LIV 主要描述波動「幅度」",
+    "subtitle": "先把 OCT 強度轉為 dB 尺度，再看時間序列的離散程度。",
+    "cards": [
+      [
+        "定義",
+        "LIV ≈ Varₜ[L(t)]",
+        "其中 L(t) 為 dB 尺度的 OCT 訊號"
+      ],
+      [
+        "高 LIV",
+        "波動幅度較大",
+        "不等於一定移動得比較快"
+      ],
+      [
+        "低 LIV",
+        "波動幅度較小",
+        "不等於細胞一定死亡"
+      ]
+    ],
+    "footnote": "重要：LIV 使用 dB 尺度；Tan 等（S03）的 IV/MIV 不是相同量。",
+    "sources": [
+      "S01",
+      "S03",
+      "S05"
+    ],
+    "wiki": "liv"
+  },
+  {
+    "id": "s07",
+    "type": "decay",
+    "eyebrow": "06 / 指標二：OCDS",
+    "title": "OCDS 描述「相關性消失得多快」",
+    "subtitle": "訊號隨時間延遲 τ 的相似程度可畫成自相關曲線。",
+    "points": [
+      "相關性下降快：變化可能發生在較短時間尺度。",
+      "OCDS_e／OCDS_l 使用不同的時間延遲區段。",
+      "時間間隔、擬合視窗與噪聲會影響結果。"
+    ],
+    "footnote": "曲線為示意，不代表實際 OCT 自相關函數或論文結果。",
+    "sources": [
+      "S01",
+      "S05"
+    ],
+    "wiki": "ocds"
+  },
+  {
+    "id": "s08",
+    "type": "metrics",
+    "eyebrow": "07 / 指標比較",
+    "title": "三類指標回答不同問題",
+    "subtitle": "不要把不同指標的數值直接互換。",
+    "cards": [
+      [
+        "LIV / STD",
+        "有多大的波動？",
+        "波動幅度／對比"
+      ],
+      [
+        "OCDS",
+        "波動發生多快？",
+        "時間相關性衰減"
+      ],
+      [
+        "aLIV / Swiftness",
+        "活動散射體多不多、快不快？",
+        "模型化的佔比與快慢指標"
+      ]
+    ],
+    "sources": [
+      "S01",
+      "S05",
+      "S06"
+    ],
+    "wiki": "aliv"
+  },
+  {
+    "id": "s09",
+    "type": "spheroid",
+    "eyebrow": "08 / 生醫實例",
+    "title": "腫瘤球為什麼需要「動態」？",
+    "subtitle": "三維腫瘤球可有外層與中心不同的生理狀態。",
+    "points": [
+      "中心區域可能氧氣、營養供應受限。",
+      "活細胞、壞死過程與藥物作用可能形成不同動態分布。",
+      "但低動態只能先稱作低動態，需生物檢測驗證。"
+    ],
+    "footnote": "截面示意圖不是任一篇論文的原始量測；不代表所有腫瘤球中心一定壞死。",
+    "sources": [
+      "S02",
+      "S03",
+      "S05"
+    ],
+    "wiki": "viability"
+  },
+  {
+    "id": "s10",
+    "type": "case",
+    "eyebrow": "09 / 藥物試驗",
+    "title": "三種藥物，同一種細胞球，反應不同",
+    "subtitle": "S02｜2024 Scientific Reports：MCF-7、PTX／TAM／DOX。",
+    "cards": [
+      [
+        "TAM",
+        "10 µM",
+        "結構破壞，LIV 和 OCDS_l 下降"
+      ],
+      [
+        "PTX",
+        "多數測試濃度",
+        "隨時間有體積及動態降低趨勢"
+      ],
+      [
+        "DOX",
+        "1 與 10 µM",
+        "體積可呈不同方向；動態仍下降"
+      ]
+    ],
+    "footnote": "研究設計：0／0.1／1／10 µM，觀察第 1、3、6 天；此為該研究結果而非通用藥效預測。",
+    "sources": [
+      "S02"
+    ],
+    "wiki": "drug"
+  },
+  {
+    "id": "s11",
+    "type": "split",
+    "eyebrow": "10 / 如何解讀",
+    "title": "體積變化 ≠ 細胞存活率",
+    "subtitle": "不同影像指標必須一起看，避免只用單一彩圖下結論。",
+    "leftTitle": "直接可觀察",
+    "left": [
+      "OCT 結構與腫瘤球形狀",
+      "LIV／OCDS_l 動態圖",
+      "時間與濃度之間的變化"
+    ],
+    "rightTitle": "需要額外證據",
+    "right": [
+      "細胞是否存活、壞死",
+      "受藥物影響的確切機制",
+      "能否推廣到其他組織／病人"
+    ],
+    "sources": [
+      "S02",
+      "S03"
+    ],
+    "wiki": "viability"
+  },
+  {
+    "id": "s12",
+    "type": "metrics",
+    "eyebrow": "11 / 生物學驗證",
+    "title": "Trypan blue：用獨立方法比對 dOCT",
+    "subtitle": "S03｜Biomedical Optics Express（2024），超過 240 顆 MCF-7 細胞球。",
+    "cards": [
+      [
+        "dOCT",
+        "多次 3D 掃描",
+        "計算 IV 與 MIV"
+      ],
+      [
+        "生物驗證",
+        "Trypan blue",
+        "球體解離後測量細胞存活率"
+      ],
+      [
+        "偏差校正",
+        "DMSO / PBS",
+        "考量亮度偏差後改善對應"
+      ]
+    ],
+    "footnote": "S03 使用的是 IV/MIV，不是 logarithmic LIV；trypan blue 驗證本身會破壞樣本。",
+    "sources": [
+      "S03"
+    ],
+    "wiki": "viability"
+  },
+  {
+    "id": "s13",
+    "type": "noise",
+    "eyebrow": "12 / 量測品質",
+    "title": "不是所有波動都來自細胞",
+    "subtitle": "機械震動、配準偏移、背景雜訊也會讓畫面看似「很活躍」。",
+    "leftTitle": "可能的假動態",
+    "left": [
+      "樣品整體位移",
+      "光程差隨震動變化",
+      "低 SNR、錯誤 mask／背景"
+    ],
+    "rightTitle": "先做的檢查",
+    "right": [
+      "比對原始連續影格與結構圖",
+      "時間序列配準及訊號品質檢查",
+      "固定 mask 規則與對照條件"
+    ],
+    "sources": [
+      "S01",
+      "S03",
+      "S04"
+    ],
+    "wiki": "artifacts"
+  },
+  {
+    "id": "s14",
+    "type": "split",
+    "eyebrow": "13 / 光學系統",
+    "title": "Common-path 減少干擾訊號",
+    "subtitle": "S04｜Common-path D-FFOCT 是相關但不同的全場 OCT 架構。",
+    "leftTitle": "傳統雙光路",
+    "left": [
+      "參考／樣品光路分離",
+      "外部震動易產生相對光程差",
+      "可能污染動態對比"
+    ],
+    "rightTitle": "共光路設計",
+    "right": [
+      "更多共通傳播路徑",
+      "抑制外界震動的差動訊號",
+      "研究中提高穩定性"
+    ],
+    "footnote": "原論文的「十倍以上」只適用其試驗環境，不能擴大為所有 dOCT 系統。",
+    "sources": [
+      "S04"
+    ],
+    "wiki": "ffoct"
+  },
+  {
+    "id": "s15",
+    "type": "metrics",
+    "eyebrow": "14 / 更新的方法",
+    "title": "aLIV 與 Swiftness：再拆開兩個面向",
+    "subtitle": "S06｜後續研究提出更可解釋的動態散射體表徵。",
+    "cards": [
+      [
+        "傳統 LIV",
+        "波動大小",
+        "可能把佔比與速率混在一起"
+      ],
+      [
+        "aLIV",
+        "飽和波動特徵",
+        "與動態散射體佔比相關"
+      ],
+      [
+        "Swiftness",
+        "時間尺度特徵",
+        "描述相對運動快慢"
+      ]
+    ],
+    "footnote": "這裡是方法直覺整理，不是可直接取代論文擬合程序的演算法規格。",
+    "sources": [
+      "S06"
+    ],
+    "wiki": "aliv"
+  },
+  {
+    "id": "s16",
+    "type": "pipeline",
+    "eyebrow": "15 / 實驗判讀實務",
+    "title": "一張 dOCT 圖應該怎麼檢查？",
+    "subtitle": "先資料品質，再動態分析，最後才做生物解釋。",
+    "steps": [
+      "檢查 raw OCT",
+      "對位與時間窗",
+      "排除背景／mask",
+      "計算動態指標",
+      "同條件做對照",
+      "生物學驗證"
+    ],
+    "footnote": "由 6 份來源綜合整理的建議流程；不是某一論文的完整操作手冊。",
+    "sources": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S06"
+    ],
+    "wiki": "artifacts"
+  },
+  {
+    "id": "s17",
+    "type": "pipeline",
+    "eyebrow": "16 / 作業核心：Wiki graph",
+    "title": "從文獻到教學簡報：可回溯的 loop",
+    "subtitle": "每張投影片都能反查來源 S01–S06 與相應的 Wiki 條目。",
+    "steps": [
+      "核對論文來源",
+      "Ingest 摘要 Wiki",
+      "查詢相關概念",
+      "檢查引用與限制",
+      "生成 HTML",
+      "測試瀏覽器"
+    ],
+    "footnote": "校驗若失敗：返回 Ingest／概念整理；手機排版失敗：返回 HTML 生成。",
+    "sources": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ],
+    "wiki": "intro"
+  },
+  {
+    "id": "s18",
+    "type": "quiz",
+    "eyebrow": "17 / 互動小測驗",
+    "title": "如果某區域的 LIV 高，可以直接說它是活細胞嗎？",
+    "subtitle": "選一個答案，看看解釋。",
+    "question": "高 LIV 最直接支持的解釋是？",
+    "options": [
+      "該區域細胞一定存活且代謝旺盛",
+      "指定時間窗內的 OCT 訊號波動幅度較大",
+      "細胞移動速度一定比其他區域快"
+    ],
+    "answer": 1,
+    "explanation": "LIV 反映波動幅度；機械擾動與訊號雜訊也會影響結果，還需要對照與生物驗證。",
+    "sources": [
+      "S01",
+      "S03",
+      "S05"
+    ],
+    "wiki": "liv"
+  },
+  {
+    "id": "s19",
+    "type": "finish",
+    "eyebrow": "18 / Takeaways",
+    "title": "記住這四句話",
+    "subtitle": "從訊號到生物結論，中間不能跳過檢查。",
+    "points": [
+      "OCT 看結構；dOCT 看同位置訊號的時間變化。",
+      "LIV 看波動幅度；OCDS 分析相關性衰減。",
+      "高／低動態不是「活／死」的絕對判斷。",
+      "用 Wiki 記錄來源、限制與檢查，讓簡報可追溯。"
+    ],
+    "sources": [
+      "S01",
+      "S02",
+      "S03",
+      "S05",
+      "S06"
+    ],
+    "wiki": "intro"
+  }
+]

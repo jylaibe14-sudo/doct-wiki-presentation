@@ -1,0 +1,28 @@
+{
+  "id": "S04",
+  "slug": "common-path-2023",
+  "title": "Common-path Optical Interferometry for Stabilized Dynamic Contrast Imaging: A Feasibility Study",
+  "authors": "Seung-Jin Lee、Young-Wan Choi、Woo June Choi",
+  "year": 2023,
+  "type": "研究論文（使用者提供 PDF）",
+  "url": "https://doi.org/10.3807/COPP.2023.7.1.65",
+  "tags": [
+    "common-path",
+    "D-FFOCT",
+    "noise",
+    "interferometry"
+  ],
+  "summary": "探討 common-path 干涉架構如何減少 D-FFOCT 對環境震動敏感的問題。",
+  "findings": [
+    "傳統雙光路 Linnik FFOCT 容易受外界震動引起的光程差變化影響，干擾動態對比。",
+    "共光路干涉讓參考光與樣品光共享更多傳播路徑，有助抑制外界機械擾動。",
+    "研究在指定擾動條件下展示較穩定的動態影像，摘要報告對噪聲的不敏感程度提高超過十倍。"
+  ],
+  "caution": "研究使用 D-FFOCT 與特定裝置；不能直接將「十倍」視為所有 swept-source 或 spectral-domain dOCT 系統的改善量。",
+  "evidence": "PDF 第 1–4 頁：Abstract、Method、Fig. 1–2",
+  "related": [
+    "ffoct",
+    "artifacts",
+    "intro"
+  ]
+}

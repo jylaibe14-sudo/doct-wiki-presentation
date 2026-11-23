@@ -1,0 +1,12 @@
+{
+  "mode": "fault-injection",
+  "created": "2026-11-23",
+  "passed": false,
+  "sourceCount": 6,
+  "conceptCount": 9,
+  "slideCount": 19,
+  "sourceReferences": 52,
+  "problems": [
+    "Slide s09 引用不存在的 S99"
+  ]
+}

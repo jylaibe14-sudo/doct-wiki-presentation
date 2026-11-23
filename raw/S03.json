@@ -1,0 +1,31 @@
+{
+  "id": "S03",
+  "slug": "trypan-validation-2024",
+  "title": "Non-destructive viability assessment of cancer cell spheroids using dynamic optical coherence tomography with trypan blue validation",
+  "authors": "Koh Hui Tan 等",
+  "year": 2024,
+  "type": "研究論文（使用者提供 PDF）",
+  "url": "https://doi.org/10.1364/BOE.533339",
+  "tags": [
+    "viability",
+    "trypan blue",
+    "IV",
+    "normalization",
+    "PBS",
+    "DMSO"
+  ],
+  "summary": "利用超過 240 顆 MCF-7 癌細胞球與 trypan blue 活性檢測相互比對，研究 dOCT 動態強度變異作為存活性量化指標的可行性。",
+  "findings": [
+    "針對 3D 細胞球取得多次體積 OCT 訊號，計算 intensity variance（IV），並以 median IV（MIV）統計。",
+    "以 trypan blue exclusion assay 提供與光學量測獨立的細胞存活率參考。",
+    "DMSO、PBS 會造成 OCT 亮度偏差，作者提出以迴歸為基礎的 OCT 亮度正規化方法改善和存活率檢測的對應。"
+  ],
+  "caution": "IV／MIV 與 LIV（dB 強度方差）不是相同定義；trypan blue 為取樣後破壞性的驗證，單個球的活性並非所有條件都能獨立量測。研究不能證明 dOCT 無條件等同存活率。",
+  "evidence": "PDF 第 1–5 頁：Abstract、Fig. 1–2、Methods 2.1–2.2",
+  "related": [
+    "viability",
+    "artifacts",
+    "acquisition",
+    "liv"
+  ]
+}

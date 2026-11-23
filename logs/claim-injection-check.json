@@ -1,0 +1,12 @@
+{
+  "mode": "claim-injection",
+  "created": "2026-11-23",
+  "passed": false,
+  "sourceCount": 6,
+  "conceptCount": 9,
+  "slideCount": 19,
+  "sourceReferences": 51,
+  "problems": [
+    "Slide s06 把 LIV 誤寫成存活率"
+  ]
+}

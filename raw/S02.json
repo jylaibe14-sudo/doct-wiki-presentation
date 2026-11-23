@@ -1,0 +1,30 @@
+{
+  "id": "S02",
+  "slug": "spheroid-drug-2024",
+  "title": "Label-free visualization and quantification of the drug-type-dependent response of tumor spheroids by dynamic optical coherence tomography",
+  "authors": "Ibrahim Abd El-Sadek 等",
+  "year": 2024,
+  "type": "研究論文（使用者提供 PDF）",
+  "url": "https://doi.org/10.1038/s41598-024-53171-4",
+  "tags": [
+    "MCF-7",
+    "drug response",
+    "LIV",
+    "OCDS_l"
+  ],
+  "summary": "以 3D dOCT 比較 MCF-7 腫瘤球在三種抗癌藥物處理後的結構與動態變化。",
+  "findings": [
+    "研究使用 paclitaxel（PTX）、tamoxifen citrate（TAM）、doxorubicin（DOX），各藥物設 0、0.1、1、10 µM 條件，觀察第 1、3、6 天。",
+    "以 logarithmic intensity variance（LIV）與 late OCT correlation decay speed（OCDS_l）比較不同時間、藥物及濃度下的動態對比。",
+    "10 µM TAM 有結構破壞與 LIV、OCDS_l 降低；PTX 和 DOX 的體積變化模式不同，因此不能僅用體積大小推定藥物反應。"
+  ],
+  "caution": "結論來自該研究的 MCF-7 腫瘤球與特定藥物／掃描條件；不能套用所有癌症、藥物或直接視為臨床療效。",
+  "evidence": "PDF 第 1–4 頁：Abstract、Results／Fig. 1–3；Methods 含 32 次重複影格",
+  "related": [
+    "drug",
+    "viability",
+    "liv",
+    "ocds",
+    "acquisition"
+  ]
+}

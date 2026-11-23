@@ -1,0 +1,31 @@
+{
+  "id": "S01",
+  "slug": "dyc-oct-review",
+  "title": "Dynamic contrast optical coherence tomography (DyC-OCT) for label-free live cell imaging",
+  "authors": "Chao Ren 等",
+  "year": 2024,
+  "type": "Mini review（使用者提供 PDF）",
+  "url": "https://doi.org/10.1038/s42003-024-05973-5",
+  "tags": [
+    "DyC-OCT",
+    "STD",
+    "LIV",
+    "OCDS",
+    "PSD"
+  ],
+  "summary": "整理動態對比 OCT 的物理直覺、重複掃描、STD/LIV、OCDS、頻譜分析及生物活體影像應用。",
+  "findings": [
+    "對同一組織位置重複 OCT 成像，可觀測每個像素或體素的訊號隨時間變動。",
+    "STD/LIV 等波動幅度統計與 OCDS 的時間相關衰減速度衡量的是不同動態面向。",
+    "頻譜分析（PSD）可觀察不同頻率範圍，通常需要更多重複影格；取樣頻率決定可觀察的動態範圍。"
+  ],
+  "caution": "使用「動態」不代表已辨識唯一生物來源；細胞運動、機械擾動與系統噪聲均可能改變訊號。本文屬 DyC-OCT 迷你綜述。",
+  "evidence": "PDF 第 1–3 頁：Principles、Pattern extraction algorithms、Applications",
+  "related": [
+    "intro",
+    "acquisition",
+    "liv",
+    "ocds",
+    "artifacts"
+  ]
+}

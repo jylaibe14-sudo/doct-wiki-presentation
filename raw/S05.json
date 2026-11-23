@@ -1,0 +1,29 @@
+{
+  "id": "S05",
+  "slug": "foundational-2020",
+  "title": "Optical coherence tomography-based tissue dynamics imaging for longitudinal and drug response evaluation of tumor spheroids",
+  "authors": "Ibrahim Abd El-Sadek 等",
+  "year": 2020,
+  "type": "研究論文（公開網頁來源）",
+  "url": "https://doi.org/10.1364/BOE.404336",
+  "tags": [
+    "LIV",
+    "OCDS_e",
+    "OCDS_l",
+    "tumor spheroid"
+  ],
+  "summary": "早期以 OCT 訊號時間序列的 LIV 與早期／晚期 OCDS 分析腫瘤球長期變化及藥物反應。",
+  "findings": [
+    "LIV 量化 OCT 訊號波動幅度，不能直接表示動態頻率或速度。",
+    "OCDS_e 與 OCDS_l 在不同延遲區段分析自相關衰減，對快、慢動態的敏感性可能不同。",
+    "在論文研究的腫瘤球條件下，LIV 與 OCDS_l 的變化可配合其他觀察解釋存活邊緣與壞死區域。"
+  ],
+  "caution": "早期與晚期 OCDS 的高低不能互換，也不能將所有低動態區直接斷言是壞死；需對照模型、掃描時間尺度及參考檢測。",
+  "evidence": "期刊全文 Section 2.2、Results；PMC7687946，2020",
+  "related": [
+    "ocds",
+    "liv",
+    "viability",
+    "drug"
+  ]
+}

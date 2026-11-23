@@ -1,0 +1,6 @@
+
+> test:claim
+> node scripts/check.mjs --inject-bad-claim
+
+FAIL | 6 sources | 9 Wiki pages | 19 slides | 51 slide-source links
+ - 錯誤歸因：高 LIV = 活細胞（故障注入測試）

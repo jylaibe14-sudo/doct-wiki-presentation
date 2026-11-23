@@ -1,0 +1,6 @@
+
+> test:validator
+> node scripts/check.mjs --inject-bad-ref
+
+FAIL | 6 sources | 9 Wiki pages | 19 slides | 52 slide-source links
+ - Slide s09 引用不存在的 S99

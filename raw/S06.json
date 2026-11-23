@@ -1,0 +1,29 @@
+{
+  "id": "S06",
+  "slug": "aliv-swiftness-2026",
+  "title": "Dynamic optical coherence tomography algorithm for label-free assessment of swiftness and occupancy of intratissue moving scatterers",
+  "authors": "Rion Morishita 等",
+  "year": 2026,
+  "type": "研究論文（線上發表 2025-12；公開網頁來源）",
+  "url": "https://doi.org/10.1364/BOE.574972",
+  "tags": [
+    "aLIV",
+    "Swiftness",
+    "dynamic scatterer ratio",
+    "motion"
+  ],
+  "summary": "提出與傳統 LIV／OCDS 不同的可解釋量化觀點，以 aLIV 與 Swiftness 表徵移動散射體的佔比與運動快速程度。",
+  "findings": [
+    "作者指出傳統 LIV／OCDS 數值與真實組織運動之間不是簡單的直接比例關係。",
+    "以 aLIV（asymptotic logarithmic intensity variance）相關特徵探討動態散射體佔比。",
+    "以 Swiftness 相關特徵提供動態散射體運動快慢的另一種衡量方式。"
+  ],
+  "caution": "aLIV 和 Swiftness 依賴其擬合模型、測量條件及訊雜比；不應將示意波形的簡化算式當成論文的正式擬合公式，或將 Swiftness 解讀為可直接換算的細胞移動速度。",
+  "evidence": "Bio. Opt. Express 17(1):322–345 (2026)，2025-12-16 線上發表；PubMed PMID 41532111",
+  "related": [
+    "aliv",
+    "liv",
+    "ocds",
+    "artifacts"
+  ]
+}
